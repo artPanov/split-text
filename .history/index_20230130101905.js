@@ -84,4 +84,4 @@ function createChunk(text, chunkIndex, chunksCount) {
     return `${text}${chunkIndex}/${chunksCount}`;
 }
 
-console.log(splitText(TEXT, MAX_TEXT_SIZE, MAX_CHUNKS_SIZE));
+console.log(splitTex(TEXT, MAX_TEXT_SIZE, MAX_CHUNKS_SIZE));

@@ -2,7 +2,7 @@ const MAX_TEXT_SIZE = 140;
 const MAX_CHUNKS_SIZE = 9999;
 const TEXT = 'Lorem ipsum dolor sit amet consectetur adipiscing elit Nullam eleifend odio at magna pretium suscipit Nam commodo mauris felis ut suscipit velit efficitur eget Sed sit amet posuere risus';
 
-function splitText(text, maxTextSize, maxChunksSize) {
+function splitTex(text, maxTextSize, maxChunksSize) {
     const words = text.split(' ');
     let chunks = [];
     let chunksCount = 0;
@@ -84,4 +84,4 @@ function createChunk(text, chunkIndex, chunksCount) {
     return `${text}${chunkIndex}/${chunksCount}`;
 }
 
-console.log(splitText(TEXT, MAX_TEXT_SIZE, MAX_CHUNKS_SIZE));
+console.log(splitTex(TEXT, MAX_TEXT_SIZE, MAX_CHUNKS_SIZE));
